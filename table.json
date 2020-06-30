@@ -1,0 +1,12 @@
+{
+  "TableName": "InitStateTable",
+  "KeySchema": [
+    { "AttributeName": "partitionKey", "KeyType": "HASH" },
+    { "AttributeName": "sortKey", "KeyType": "RANGE"}
+  ],
+  "AttributeDefinitions": [
+    { "AttributeName": "partitionKey", "AttributeType": "S"},
+    {"AttributeName": "sortKey", "AttributeType": "S"}
+  ],
+  "BillingMode": "PAY_PER_REQUEST"
+}
